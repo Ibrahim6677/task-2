@@ -1,0 +1,317 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* NavBar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 50px 50px 0 50px;
+  z-index: 2;
+}
+.navbar .left-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .left-nav .list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar .left-nav .list li{
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  color: #67757c;
+  transition: all 0.5s linear;
+}
+.navbar .left-nav .list li:hover{
+  color: #702f83;
+}
+.navbar .left-nav .list .active::after{
+  content: "";
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  left: 3px;
+  background-color: #702f83;
+}
+.right-nav{
+  position: absolute;
+  right: 100px;
+}
+.right-nav .btn{
+  padding: 8px;
+  font-size: 16px;
+  width: 100px;
+  border: none;
+  border-radius: 50px;
+  background-image: url(/img/login_button_bg.png);
+  color: #67757c;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.right-nav .btn:hover{
+  background-image: none;
+  background-color: #702f83;
+  color: white;
+}
+.home-page,
+.navbar{
+  background-image: url(/img/blue_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+/* Home Page */
+.home-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.home-page .right-home{
+  position: relative;
+}
+.home-page .right-home .img{
+  position: absolute;
+  left: 120px;
+  top: 0px;
+}
+.home-page .right-home .clouds{
+  position: absolute;
+  left: 120px;
+  bottom: 60px;
+  opacity: .9;
+}
+.home-page .left-home .waves{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.home-page .left-home{
+  width: 608px;
+}
+.home-page .left-home h1{
+  color: #67757c;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.home-page .left-home h1 span{
+  color: #702f83;
+}
+.home-page .left-home h3{
+  color: #67757c;
+  font-size: 30px;
+  font-weight: 500;
+}
+/* second Page */
+.sec-page{
+  padding: 0 40px;
+}
+.sec-page .page{
+  height: 100vh;
+  background-image: url(/img/second_section_.png);
+  background-size:900px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sec-page .div-img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.sec-page .div-img .div-1,
+.sec-page .div-img .div-2,
+.sec-page .div-img .div-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-page .div-img .div-1,
+.sec-page .div-img .div-2,
+.sec-page .div-img .div-3{
+  position: absolute;
+}
+.sec-page .div-img .div-1{
+  left: 50px;
+  top: 150px;
+}
+.sec-page .div-img .div-2{
+  top: 270px;
+  left: 470px;
+}
+.sec-page .div-img .div-3{
+  right: 200px;
+  top: 550px;
+}
+.sec-page .div-img .div-1 h2,
+.sec-page .div-img .div-2 h2,
+.sec-page .div-img .div-3 h2{
+  margin: 10px;
+  color: #67757c;
+}
+.sec-page .div-img .div-1 h5,
+.sec-page .div-img .div-2 h5,
+.sec-page .div-img .div-3 h5{
+  text-align: center;
+  font-size: 15px;
+  color: #67757c8c;
+  line-height: 25px;
+}
+.sec-page .div-img .div-1 h5{
+  width: 280px;
+}
+.sec-page .div-img .div-1 h5:last-child,
+.sec-page .div-img .div-2 h5:last-child,
+.sec-page .div-img .div-3 h5:last-child{
+  width: 320px;
+}
+.sec-page .page .choose{
+  position: relative;
+}
+.sec-page .page .choose .img{
+  position: absolute;
+  top: 500px;
+  left: 60px;
+}
+.sec-page .page .choose .img .title{
+  position: absolute;
+  top: 90px;
+  left: 68px;
+  color: white;
+}
+.sec-page .page .choose .img .title h1{
+  margin: 10px 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+/* img Page */
+.img-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.img-page .im .img{
+  position: relative;
+}
+.img-page .im .img .img-1,
+.img-page .im .img .img-2,
+.img-page .im .img .img-3{
+  position: absolute;
+}
+.img-page .im .img .img-1{
+  right: 30pc;
+}
+.img-page .im .img .img-2{
+  left: -115px;
+  top: -10pc;
+}
+.img-page .im .img .img-3{
+  left: 28pc;
+  top: 1pc;
+}
+.img-page .im .title-page{
+  position: relative;
+  width: 300px;
+}
+.img-page .im .title{
+  position: absolute;
+  top: 200px;
+  text-align: center;
+}
+.img-page .im .title h2{
+  color: #67757c;
+  margin: 10px 0;
+}
+.img-page .im .title h5{
+  font-size: 15px;
+  color: #67757c8c;
+  line-height: 25px;
+}
+/* Last page */
+.last-page .last {
+  height: 70vh;
+}
+.last-page .last{
+  background-image: url(/img/Group\ 1131.png);
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.last-page .last .content{
+  position: absolute;
+  left: 150px;
+  bottom: 40px;
+}
+.last-page .last .img{
+  position: absolute;
+  right: 170px;
+  bottom: -5px;
+}
+.last-page .last .download{
+  display: flex;
+  align-items: center;
+}
+.last-page .last .download .play{
+  margin-right: 20px;
+}
+.last-page .last .download .play,
+.last-page .last .download .apple{
+  display: flex;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.last-page .last .download .play .title,
+.last-page .last .download .apple .title{
+  margin-left: 10px;
+}
+.last-page .last .download .play .title h6,
+.last-page .last .download .apple .title h6{
+  color: #67757c8c;
+}
+.last-page .last .download .play .title h4,
+.last-page .last .download .apple .title h4{
+  color: #67757c;
+  padding: 5px 0;
+}
+.last-page .last .content .download .play:hover,
+.last-page .last .content .download .apple:hover{
+  background-color: #702f83;
+}
+.last-page .last .icon{
+  margin: 30px 0;
+}
+.last-page .last .icon .icon-1{
+  margin: 0 20px;
+}
+.last-page .last .list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.last-page .last .list li{
+  margin-right: 25px;
+  position: relative;
+  color: white;
+  transition: all 0.7s linear;
+  cursor: pointer;
+}
+.last-page .last .list li:hover{
+  color: #702f83;
+}
